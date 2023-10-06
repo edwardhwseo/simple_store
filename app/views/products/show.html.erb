@@ -1,1 +1,2 @@
 <h1><%= @product.title %></h1>
+<strong>Category:</strong> <%= Category.find_by(id: @product.category_id).name %>
